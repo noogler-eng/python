@@ -89,3 +89,23 @@ class UserDatabase:
 
 # sort is only for list, it returns nothing as change origninal list
 # sorted is for any itertable data structure, it returns sorted data structure instead of changing original
+
+# finf height of tree
+# this is structre of tree
+class Node:
+    def __init__(self, value):
+        self.val = value
+        self.left = None
+        self.right = None
+
+def find_height_of_tree():
+    root = Node(1)
+    root.left = Node(2)
+    root.right = Node(3)
+    root.left.left = Node(4)
+    root.left.right = Node(5)
+    root.right.left = Node(6)
+    root.right.right = Node(7)
+    return root
+
+# 
